@@ -15,7 +15,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    width: 100vw; 
+    /* width: 100vw;  */
 }
 
 /* loading */
@@ -48,6 +48,10 @@ body {
     font-weight: 500;
     text-transform: uppercase;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .btn-primary:hover {
@@ -113,9 +117,9 @@ body {
     color: var(--dark);
     text-decoration: none;
     font-size: 0.9rem;
-    font-weight: 300;
+    font-weight: 500;
     text-transform: uppercase;
-    padding: 5px 15px; 
+    padding: 10px 15px; 
     margin: 5px 15px;
 }
 
@@ -125,7 +129,7 @@ body {
     scale: 1.1;
     border-bottom: 1px solid var(--purple-islu);
     color: var(--purple-islu);
-    font-weight: 400;
+    font-weight: 500;
 }
 
 @media screen and (max-width: 768px) { 
@@ -173,4 +177,84 @@ body {
 
 .dropdown-mobile .item-services:hover{
     color: var(--purple-islu);
+}
+
+/* header */
+
+header .container .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding: 20px 0;
+}
+
+.mt-6{
+    margin-top: 6rem;
+}
+
+.title-header{
+    font-size: 3rem;
+    font-weight: 500;
+    text-transform: uppercase; 
+    margin-bottom: 20px;
+    color: var(--purple-islu);
+}
+
+.subtitle-header{
+    font-size: 1.5rem;
+    font-weight: 300; 
+    margin-bottom: 20px;
+}
+
+.slogan-header{
+    height: 200px;
+    max-width: 100%;
+}
+
+.img-header{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    background-image: url('../img/header.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
+    height: 450px;
+}
+
+.img-header img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 990px) { 
+    .slogan-header{
+        height: 150px;
+    }
+
+    .subtitle-header{
+        font-size: 1rem;
+    }
+    
+    .img-header{
+        height: 350px;
+    }
+}
+
+@media screen and (max-width: 768px) { 
+    .slogan-header{
+        height: 100px;
+    }
+
+    .subtitle-header{
+        font-size: 1rem;
+    }
+    
+    .img-header{
+        height: 200px;
+    }
 }
