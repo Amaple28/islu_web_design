@@ -1,0 +1,171 @@
+
+:root {
+    /* --primary: #8419BC;
+    --secondary: #8C52FF; */
+    --light: #F6F4F9;
+    --dark: #04000B;
+    --pink-islu: #EF4DC1;
+    --purple-islu: #8419BC;
+    --blue-islu: #0EC6E5;
+}
+
+body {
+    background-color: var(--light);
+    color: var(--dark);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100vw; 
+}
+
+/* loading */
+.loading{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+/* container */
+.container-fluid {
+    width: 100%; 
+    margin: 0 auto;
+    padding: 0 !important;
+}
+
+.btn-primary {
+    background-color: var(--purple-islu);
+    color: var(--light);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: var(--pink-islu);
+}
+
+/* btns flutuantes */
+.back-to-top {
+    position: fixed; 
+    right: 25px;
+    bottom: 25px;
+    z-index: 99; 
+    border-radius: 45%;
+}
+
+.back-to-whatsapp {
+    position: fixed; 
+    left: 25px;
+    bottom: 25px;
+    z-index: 99; 
+    border-radius: 45%;
+}
+
+.back-to-top:hover, 
+.back-to-whatsapp:hover {
+    cursor: pointer;
+    scale: 1.1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* navbar */
+.navbar { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 10px 20px; 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+} 
+
+.navbar-brand {
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--dark);
+} 
+
+.navbar-mobile {
+    display: none;
+}
+
+.navbar-desktop {
+    color: var(--dark);
+    display: flex; 
+}
+
+.nav-link  {
+    color: var(--dark);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding: 5px 15px; 
+    margin: 5px 15px;
+}
+
+.navbar-desktop  .nav-link:hover,
+.navbar-desktop  .nav-link.active {
+    cursor: pointer;
+    scale: 1.1;
+    border-bottom: 1px solid var(--purple-islu);
+    color: var(--purple-islu);
+    font-weight: 400;
+}
+
+@media screen and (max-width: 768px) { 
+    .navbar-mobile {
+        display: block;
+    } 
+
+    .navbar-desktop {
+        display: none;
+    }
+}
+
+.dropdown-desktop { 
+    width: 80%; 
+    padding: 10px 30px;
+    background-color: var(--light); 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 50px;
+    left: 0;
+    margin: 10px 5%;
+}
+
+.item-services {
+    font-weight: 500;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+.dropdown-desktop .item-services:hover,
+.dropdown-desktop .item-services:hover svg{
+    color: var(--purple-islu);
+    scale: 1.1;
+}
+
+.item-services .icon-nova-aba {
+    margin-left: 10px; 
+    color: var(--purple-islu); 
+}
+
+.dropdown-mobile{
+    border:none;
+    padding-left: 15px;
+}
+
+.dropdown-mobile .item-services:hover{
+    color: var(--purple-islu);
+}
