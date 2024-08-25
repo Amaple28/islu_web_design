@@ -217,7 +217,7 @@ header .container .row{
     display: flex;
     justify-content: center;
     align-items: center;  
-    background-image: url('img/header.png');
+    background-image: url('/img/header.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -260,7 +260,4 @@ header .container .row{
         height: 200px;
     }
 
-    .mt-6{
-        margin-top: 7rem;
-    }
 }
