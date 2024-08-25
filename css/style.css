@@ -215,7 +215,7 @@ header .container .row{
     display: flex;
     justify-content: center;
     align-items: center;  
-    background-image: url('../img/header.png');
+    background-image: url('./img/header.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -247,7 +247,7 @@ header .container .row{
 
 @media screen and (max-width: 768px) { 
     .slogan-header{
-        height: 100px;
+        width: 100%;
     }
 
     .subtitle-header{
