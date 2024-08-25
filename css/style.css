@@ -257,4 +257,8 @@ header .container .row{
     .img-header{
         height: 200px;
     }
+
+    .mt-6{
+        margin-top: 7rem;
+    }
 }
